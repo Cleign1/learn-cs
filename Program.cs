@@ -1,4 +1,6 @@
-﻿// string[] fraudulentOrderIDs = new string[3];
+﻿// Get started on array basics
+
+// string[] fraudulentOrderIDs = new string[3];
 
 // fraudulentOrderIDs[0] = "A123";
 // fraudulentOrderIDs[1] = "B456";
@@ -13,14 +15,17 @@
 
 // Console.WriteLine($"New First : {fraudulentOrderIDs[0]}");
 
-string[] fraudulentOrderIDs = [ "A123", "B456", "C789"];
+// string[] fraudulentOrderIDs = [ "A123", "B456", "C789"];
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+// Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+// Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+// Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
 
-fraudulentOrderIDs[0] = "F000";
+// fraudulentOrderIDs[0] = "F000";
 
-Console.WriteLine($"New First : {fraudulentOrderIDs[0]}");
+// Console.WriteLine($"New First : {fraudulentOrderIDs[0]}");
 
-Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process");
+// Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process");
+
+// Implement For Each statement
+
