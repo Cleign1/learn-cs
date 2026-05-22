@@ -64,8 +64,15 @@
 // Console.WriteLine("Hello \"Brother\"");
 // Console.WriteLine("c:\\users\\ibnuk");
 
-Console.WriteLine("Generating Output for \"User\" ... \n");
-Console.WriteLine("Answer: Generating\t...");
-Console.WriteLine("Answer:Found...\t\tComplete!");
-Console.Write("\nOutput Directory\n");
-Console.WriteLine("C:\\users\\ibnuk\\answers.txt");
+// Console.WriteLine("Generating Output for \"User\" ... \n");
+// Console.WriteLine("Answer: Generating\t...");
+// Console.WriteLine("Answer:Found...\t\tComplete!");
+// Console.Write("\nOutput Directory\n");
+// Console.WriteLine("C:\\users\\ibnuk\\answers.txt");
+
+// Combine Strings Unit 3
+
+string firstName = "Bob";
+string lastName = "Shmurda";
+string message = $"Hello {firstName} {lastName}";
+Console.WriteLine(message);
