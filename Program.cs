@@ -29,3 +29,9 @@
 
 // Implement For Each statement
 
+string[] names = { "Ibnu", "Yudha", "Bao"};
+
+foreach (string name in names)
+{
+  Console.WriteLine(name);
+}
