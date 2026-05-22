@@ -100,8 +100,12 @@
 
 // csharp basic operation
 
-string name = "Bob";
-int message = 3;
-double temp = 34.4;
-string messages = $"Hello, {name}! You Have {message} in your inbox. The temperature is {temp}";
-Console.WriteLine(messages);
+// string name = "Bob";
+// int message = 3;
+// double temp = 34.4;
+// string messages = $"Hello, {name}! You Have {message} in your inbox. The temperature is {temp}";
+// Console.WriteLine(messages);
+
+Random dice = new Random();
+int roll = dice.Next(1, 7);
+Console.WriteLine(roll);
