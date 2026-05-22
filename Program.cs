@@ -29,9 +29,19 @@
 
 // Implement For Each statement
 
-string[] names = { "Ibnu", "Yudha", "Bao"};
+// string[] names = { "Ibnu", "Yudha", "Bao"};
 
-foreach (string name in names)
+// foreach (string name in names)
+// {
+//   Console.WriteLine(name);
+// }
+
+int[] inventory = { 200, 400, 700, 175, 250 };
+int sum = 0;
+foreach (int nums in inventory)
 {
-  Console.WriteLine(name);
+  sum += nums;
+  Console.WriteLine(sum);
 }
+
+Console.WriteLine($"We Have {sum} items in inventory");
