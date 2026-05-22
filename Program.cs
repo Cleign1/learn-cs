@@ -72,7 +72,17 @@
 
 // Combine Strings Unit 3
 
-string firstName = "Bob";
-string lastName = "Shmurda";
-string message = $"Hello {firstName} {lastName}";
+// string firstName = "Bob";
+// string lastName = "Shmurda";
+// string message = $"Hello {firstName} {lastName}";
+// Console.WriteLine(message);
+
+// Unit 4 Combine String Exercise
+
+int version = 11;
+string updateText = "Update to Windows";
+string message = $"{updateText} {version}";
 Console.WriteLine(message);
+
+string projectName = "learn-cs";
+Console.WriteLine($@"~/output/{projectName}/");
