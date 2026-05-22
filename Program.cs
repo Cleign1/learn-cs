@@ -50,11 +50,22 @@
 
 // Unit 4
 
-string[] codes = ["B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"];
-foreach (string code in codes)
-{
-  if (code.StartsWith("B"))
-  {
-    Console.WriteLine(code);
-  }
-}
+// string[] codes = ["B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"];
+// foreach (string code in codes)
+// {
+//   if (code.StartsWith("B"))
+//   {
+//     Console.WriteLine(code);
+//   }
+// }
+
+// Perform Basic string formatting in C#
+
+// Console.WriteLine("Hello \"Brother\"");
+// Console.WriteLine("c:\\users\\ibnuk");
+
+Console.WriteLine("Generating Output for \"User\" ... \n");
+Console.WriteLine("Answer: Generating\t...");
+Console.WriteLine("Answer:Found...\t\tComplete!");
+Console.Write("\nOutput Directory\n");
+Console.WriteLine("C:\\users\\ibnuk\\answers.txt");
