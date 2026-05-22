@@ -36,14 +36,25 @@
 //   Console.WriteLine(name);
 // }
 
-int[] inventory = { 200, 400, 700, 175, 250 };
-int sum = 0;
-int bin = 0;
-foreach (int nums in inventory)
-{
-  sum += nums;
-  bin++;
-  Console.WriteLine($"Bin {bin} = {nums} items (Running Total: {sum})");
-}
+// int[] inventory = { 200, 400, 700, 175, 250 };
+// int sum = 0;
+// int bin = 0;
+// foreach (int nums in inventory)
+// {
+//   sum += nums;
+//   bin++;
+//   Console.WriteLine($"Bin {bin} = {nums} items (Running Total: {sum})");
+// }
 
-Console.WriteLine($"We Have {sum} items in inventory");
+// Console.WriteLine($"We Have {sum} items in inventory");
+
+// Unit 4
+
+string[] codes = ["B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"];
+foreach (string code in codes)
+{
+  if (code.StartsWith("B"))
+  {
+    Console.WriteLine(code);
+  }
+}
