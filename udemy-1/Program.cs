@@ -1,16 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int numberOne;
-int numberTwo;
+using System.Globalization;
+
+double numberOne;
+double numberTwo;
 
 Console.WriteLine("Enter a Number");
-string? inputOne = Console.ReadLine();
+string inputOne = (Console.ReadLine() ?? "0").Replace(',','.');
+// inputOne = inputOne.Replace(',','.');
 
 Console.WriteLine("Enter a Second Number");
-string? inputTwo = Console.ReadLine();
+string inputTwo = (Console.ReadLine() ?? "0").Replace(',','.');
+// inputTwo = inputTwo.Replace(',','.');
 
-numberOne = int.Parse(inputOne ?? "0");
-numberTwo = int.Parse(inputTwo ?? "0");
+numberOne = double.Parse(inputOne, CultureInfo.InvariantCulture);
+numberTwo = double.Parse(inputTwo, CultureInfo.InvariantCulture);
 
-int total = numberOne + numberTwo;
+double total = numberOne + numberTwo;
+total = Math.Round(total, 2);
 
-Console.WriteLine($"The total number is {total}");
+Console.WriteLine($"The total number is {total.ToString(CultureInfo.InvariantCulture)}");
+Console.WriteLine($"Current culture is {CultureInfo.CurrentCulture.Name}");
