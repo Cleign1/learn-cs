@@ -1,11 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
-string[] names;
+int numberOne;
+int numberTwo;
 
-names = ["Ibnu", "Kevin", "Cleign", "Yata", "Yudha", "Reza"];
+Console.WriteLine("Enter a Number");
+string? inputOne = Console.ReadLine();
 
-Random.Shared.Shuffle(names);
+Console.WriteLine("Enter a Second Number");
+string? inputTwo = Console.ReadLine();
 
-for (int i = 0; i < names.Length; i++)
-{
-  Console.WriteLine(names[i]);
-}
+numberOne = int.Parse(inputOne ?? "0");
+numberTwo = int.Parse(inputTwo ?? "0");
+
+int total = numberOne + numberTwo;
+
+Console.WriteLine($"The total number is {total}");
