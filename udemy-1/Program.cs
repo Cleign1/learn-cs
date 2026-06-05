@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-string name = "Ibnu Khaidar";
+string? userInput1 = Console.ReadLine();
+Console.WriteLine("Input the first Number " + userInput1);
 
-Console.WriteLine($"Hello! {name} \n\n");
+string? userInput2 = Console.ReadLine();
+Console.WriteLine($"Input Second Number {userInput2}");
 
-name = "Cleign";
-Console.WriteLine($"Whops, your name changed to {name}");
