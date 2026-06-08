@@ -1,22 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Globalization;
+// implicit conversion
+int myInt;
+myInt = 2147483647;
+double myDouble;
+myDouble = myInt;
 
-double numberOne;
-double numberTwo;
+Console.WriteLine(myInt);
 
-Console.WriteLine("Enter a Number");
-string inputOne = (Console.ReadLine() ?? "0").Replace(',','.');
-// inputOne = inputOne.Replace(',','.');
 
-Console.WriteLine("Enter a Second Number");
-string inputTwo = (Console.ReadLine() ?? "0").Replace(',','.');
-// inputTwo = inputTwo.Replace(',','.');
+// explicit conversion
+long myLong = 3242343234324234323;
+Console.WriteLine(myLong);
+int myInt2 = (int)myLong;
+Console.WriteLine(myInt2);
 
-numberOne = double.Parse(inputOne, CultureInfo.InvariantCulture);
-numberTwo = double.Parse(inputTwo, CultureInfo.InvariantCulture);
-
-double total = numberOne + numberTwo;
-total = Math.Round(total, 2);
-
-Console.WriteLine($"The total number is {total.ToString(CultureInfo.InvariantCulture)}");
-Console.WriteLine($"Current culture is {CultureInfo.CurrentCulture.Name}");
+float myFloat = 3.14f;
+myDouble = 112.1232132132312f;
+myFloat = (float)myDouble;
+Console.WriteLine(myFloat);
