@@ -1,30 +1,40 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int day = 3;
+// conditional based calculator
 
-switch (day)
+Console.WriteLine("Enter the first number: ");
+double num1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Enter the second number: ");
+double num2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Choose an operation: +, -, *, /");
+string op = Console.ReadLine();
+double result = 0;
+if (op == "+")
 {
-    case 1:
-        Console.WriteLine("Monday");
-        break;
-    case 2:
-        Console.WriteLine("Tuesday");
-        break;
-    case 3:
-        Console.WriteLine("Wednesday");
-        break;
-    case 4:
-        Console.WriteLine("Thursday");
-        break;
-    case 5:
-        Console.WriteLine("Friday");
-        break;
-    case 6:
-        Console.WriteLine("Saturday");
-        break;
-    case 7:
-        Console.WriteLine("Sunday");
-        break;
-    default:
-        Console.WriteLine("Invalid day");
-        break;
+    result = num1 + num2;
 }
+else if (op == "-")
+{
+    result = num1 - num2;
+}
+else if (op == "*")
+{
+    result = num1 * num2;
+}
+else if (op == "/")
+{
+    if (num2 != 0)
+    {
+        result = num1 / num2;
+    }
+    else
+    {
+        Console.WriteLine("Cannot divide by zero.");
+        return;
+    }
+}
+else
+{
+    Console.WriteLine("Invalid operator.");
+    return;
+}
+Console.WriteLine($"Result: {result}");
