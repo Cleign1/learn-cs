@@ -1,9 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// conversion
-string numberString = "1234";
-int number = int.Parse(numberString);
-Console.WriteLine(number);
+int num = 10;
+double price = 99.99;
+string name = "Frank";
 
-string boolString = "true";
-bool boolValue = Convert.ToBoolean(boolString);
-Console.WriteLine(boolValue);
+Console.WriteLine($"The number is {num}, the price is {price}, and the name is {name}.");
