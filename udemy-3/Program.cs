@@ -4,11 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Car audi = new Car("A3", "Audi", false);
-        Car bmw = new Car("M5", "BMW", true);
-        
-        Console.WriteLine($"Brand is {audi.Brand}");
-        Console.WriteLine($"Brand is {bmw.Brand}");
-        
+        Customer earl = new Customer("Earl");
+        Customer frankTheTank = new Customer("FrankTheTank", "Mainstreet 1", "123");
+        // Console.WriteLine($"Name of customer: {earl.Name}");
+        // Console.WriteLine($"Name of customer: {frankTheTank.Name}");
+        // Console.WriteLine($"{frankTheTank.Name} address is {frankTheTank.Address}");
+
+        Customer myCustomer = new Customer();
+        Console.WriteLine($"Name of customer: {myCustomer.Name}");
+        myCustomer.Name =  Console.ReadLine();
+        Console.WriteLine($"Name of customer: {myCustomer.Name}");
     }
 }
