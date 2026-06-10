@@ -2,71 +2,33 @@
 
 class Program
 {
-    static int num1, num2, result;
-    static string? operation;
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, Welcome to my Calculator App!");
-        Console.Write("Enter the first number: ");
-        num1 = int.Parse(Console.ReadLine() ?? "0");
-        Console.Write("Enter the second number: ");
-        num2 = int.Parse(Console.ReadLine() ?? "0");
+        Console.WriteLine("Enter the number of days to simulate:");
+        int days = int.Parse(Console.ReadLine() ?? "0");
 
-        Console.WriteLine("Select an operation: +, -, *, /");
-        operation = Console.ReadLine();
-        result = 0;
-        if (operation == "+")
+        int[] temperatures = new int[days];
+        string[] conditions = {"Sunny", "Cloudy", "Rainy", "Windy"};
+        string[] weatherConditions = new string[days];
+
+        Random random = new Random();
+        for (int i = 0; i < days; i++)
         {
-            result = Add(num1, num2);
+            temperatures[i] = random.Next(18, 37);
+            weatherConditions[i] = conditions[random.Next(conditions.Length)];
         }
-        else if (operation == "-")
-        {
-            result = Subtract(num1, num2);
-        }
-        else if (operation == "*")
-        {
-            result = Multiply(num1, num2);
-        }
-        else if (operation == "/")
-        {
-            try
-            {
-                result = Divide(num1, num2);
-            }
-            catch (DivideByZeroException ex)
-            {
-                Console.WriteLine(ex.Message);
-                return;
-            }
-        }
-        else
-        {
-            Console.WriteLine("Invalid operation selected.");
-            return;
-        }
-        Console.WriteLine($"The result of {num1} {operation} {num2} is: {result}");
-    }
-    static int Add(int a, int b)
-    {
-        return a + b;
+
+        double averageTemperature = CalculateAverageTemperature(temperatures);
+        Console.WriteLine($"Average Temperature: {averageTemperature:F2}°C");
     }
 
-    static int Subtract(int a, int b)
+    static double CalculateAverageTemperature(int[] temperatures)
     {
-        return a - b;
-    }
-
-    static int Multiply(int a, int b)
-    {
-        return a * b;
-    }
-
-    static int Divide(int a, int b)
-    {
-        if (b == 0)
+        int sum = 0;
+        foreach (int temp in temperatures)
         {
-            throw new DivideByZeroException("Cannot divide by zero.");
+            sum += temp;
         }
-        return a / b;
+        return (double)sum / temperatures.Length;
     }
 }
