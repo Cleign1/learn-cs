@@ -4,12 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Car audi = new Car("Audi", "A3");
-        Car bmw = new Car("BMW", "M5");
+        Car audi = new Car("A3", "Audi", false);
+        Car bmw = new Car("M5", "BMW", true);
         
-        Console.WriteLine("Please Enter the Brand name");
-        audi.Brand = Console.ReadLine() ?? "Audi";
-        Console.WriteLine(audi);
-        Console.WriteLine(bmw);
+        Console.WriteLine($"Brand is {audi.Brand}");
+        Console.WriteLine($"Brand is {bmw.Brand}");
+        
     }
 }
