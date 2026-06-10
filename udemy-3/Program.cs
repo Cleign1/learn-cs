@@ -5,10 +5,12 @@ class Program
     static void Main(string[] args)
     {
         Customer myCustomer = new Customer();
-        Console.WriteLine($"My Customer: {myCustomer.Name}");
-        myCustomer.SetDetails("John Doe", "Side Street 1", "999");
-        Console.WriteLine($"My Customer: {myCustomer.Name}");
-        Console.WriteLine($"My Customer: {myCustomer.Address}");
-        Console.WriteLine($"My Customer: {myCustomer.ContactNumber}");
+        myCustomer.SetDetails("John Doe");
+        // Console.WriteLine($"Name: {myCustomer.Name}, Address: {myCustomer.Address}, Contact: {myCustomer.ContactNumber}");
+
+        Customer customer1 = new Customer("Frank");
+        Console.WriteLine("Enter Frank Phone Number");
+        customer1.ContactNumber = Console.ReadLine() ?? "N/A";
+        Console.WriteLine($"Name: {customer1.Name}, Address: {customer1.ContactNumber}");
     }
 }
