@@ -44,4 +44,9 @@ public class Car
         Console.WriteLine($"A car brand {_brand} with {Model} model has been created.");
         IsLuxury = isLuxury;
     }
+
+    public void Drive()
+    {
+        Console.WriteLine($"I'm a {Model} and i'm Driving this car");
+    }
 }
