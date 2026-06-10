@@ -2,17 +2,19 @@
 
 class Program
 {
+    static int num1, num2, result;
+    static string? operation;
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, Welcome to my Calculator App!");
         Console.Write("Enter the first number: ");
-        int num1 = int.Parse(Console.ReadLine() ?? "0");
+        num1 = int.Parse(Console.ReadLine() ?? "0");
         Console.Write("Enter the second number: ");
-        int num2 = int.Parse(Console.ReadLine() ?? "0");
+        num2 = int.Parse(Console.ReadLine() ?? "0");
 
         Console.WriteLine("Select an operation: +, -, *, /");
-        string? operation = Console.ReadLine();
-        int result = 0;
+        operation = Console.ReadLine();
+        result = 0;
         if (operation == "+")
         {
             result = Add(num1, num2);
