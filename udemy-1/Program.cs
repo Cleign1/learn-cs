@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-void myFirstMethod()
+int MultiplyTwoValues(int a, int b)
 {
-    Console.WriteLine("myFirstMethod was called");
+    int result = a * b;
+    return result;
 }
-
-Console.WriteLine("Hello, World!");
-myFirstMethod();
+Console.WriteLine("Masukkan nilai pertama: , Saya akan menggandakannya");
+int value1 = int.Parse(Console.ReadLine() ?? "0");
+int multiplicationResult = MultiplyTwoValues(value1, 2);
+Console.WriteLine($"Hasil penggandaan: {multiplicationResult}");
