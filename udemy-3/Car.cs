@@ -2,17 +2,17 @@ namespace udemy_3;
 
 public class Car
 {
-    private string _model = "";
+    // private string _model = "";
     private string _brand = "";
-    private bool _isLuxury = false;
+    // private bool _isLuxury;
 
-    public string Model { get => _model; set =>  _model = value; }
+    public string Model { get; set; }
 
     public string Brand
     {
         get
         {
-            if (_isLuxury)
+            if (IsLuxury)
             {
                 return _brand + " - Luxury Edition";
             }
@@ -35,11 +35,7 @@ public class Car
         }
     }
 
-    public bool IsLuxury
-    {
-        get => _isLuxury;
-        set => _isLuxury = value;
-    }
+    public bool IsLuxury { get; set; }
 
     public Car(string model, string brand, bool isLuxury)
     {
