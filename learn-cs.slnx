@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="udemy-1/udemy-1.csproj" />
+  <Project Path="udemy-2/udemy-2.csproj" />
+  <Project Path="udemy-3/udemy-3.csproj" />
+</Solution>
