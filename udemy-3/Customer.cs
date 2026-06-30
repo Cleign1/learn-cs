@@ -10,6 +10,11 @@ public class Customer
 {
     private static int nextId = 0;
     private readonly int _id;
+
+    public int ID
+    {
+        get { return _id; }
+    }
     public string Name  { get; set; }
     public string Address { get; set; }
     public string ContactNumber { get; set; }

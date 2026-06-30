@@ -16,5 +16,7 @@ class Program
         myCustomer.GetDetails();
         myCustomer2.GetDetails();
 
+        Console.WriteLine($"My first customer id is {myCustomer.ID}");
+
     }
 }
