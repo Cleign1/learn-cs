@@ -17,6 +17,7 @@ class Program
         myCustomer2.GetDetails();
 
         Console.WriteLine($"My first customer id is {myCustomer.ID}");
-
+        myCustomer.Password = "12312333";
+        myCustomer.GetDetails();
     }
 }

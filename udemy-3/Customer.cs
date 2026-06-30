@@ -10,10 +10,15 @@ public class Customer
 {
     private static int nextId = 0;
     private readonly int _id;
+    private string _password;
 
     public int ID
     {
         get { return _id; }
+    }
+    public string Password
+    {
+        set { _password = value; }
     }
     public string Name  { get; set; }
     public string Address { get; set; }
