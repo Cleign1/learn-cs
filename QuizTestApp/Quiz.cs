@@ -8,31 +8,35 @@ namespace QuizTestApp
 {
     internal class Quiz
     {
-        private Question[] question;
+        private Question[] _question;
+        private int _score;
         public Quiz(Question[] questions)
         {
-            this.question = questions;
+            this._question = questions;
+            _score = 0;
         }
 
         public void StartQuiz()
         {
             Console.WriteLine("Welcome to the quiz!!");
             int questionNumber = 1;
-
-            foreach (Question pertanyaan in question)
+           
+            foreach (Question question in _question)
             {
                 Console.WriteLine($"Question {questionNumber++}");
-                DisplayQuestion(pertanyaan);
+                DisplayQuestion(question);
                 int userChoice = GetUserChoice();
-                if (pertanyaan.IsCorrectAnswer(userChoice))
+                if (question.IsCorrectAnswer(userChoice))
                 {
                     Console.WriteLine("Correct");
+                    _score++;
                 }
                 else
                 {
-                    Console.WriteLine($"Salah, yang bener adalah {pertanyaan.Answers[pertanyaan.CorrectionAnswer]}");
+                    Console.WriteLine($"Salah, yang bener adalah {question.Answers[question.CorrectionAnswer]}");
                 }
             }
+            DisplayResults();
         }
 
         private void DisplayQuestion(Question question)
@@ -58,6 +62,12 @@ namespace QuizTestApp
             }
             Console.WriteLine("\n");
             return choice -1;
+        }
+
+        private void DisplayResults()
+        {
+            double hasil = ((double)_score / _question.Length) * 100;
+            Console.WriteLine($"Kuis selesai, nilai anda adalah {hasil}");
         }
     }
 }

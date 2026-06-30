@@ -19,8 +19,6 @@
 
             Quiz myQuiz = new Quiz(question);
             myQuiz.StartQuiz();
-
-
         }
     }
 }
