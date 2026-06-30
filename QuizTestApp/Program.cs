@@ -8,7 +8,7 @@
             {
                 new Question("Siapa Gweh?",
                 new string[] {"Gweh", "Lu", "Awas ada suleee"},
-                1)
+                2)
             };
 
             Quiz myQuiz = new Quiz(question);
