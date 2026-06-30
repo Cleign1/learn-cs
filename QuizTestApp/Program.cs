@@ -8,11 +8,17 @@
             {
                 new Question("Siapa Gweh?",
                 new string[] {"Gweh", "Lu", "Awas ada suleee"},
-                2)
+                2),
+                new Question("Berapa 10 + 6",
+                new string[] {"16", "17", "Nyenyenyenye"},
+                1),
+                new Question("Saya akan....",
+                new string[] {"Lawan", "Uehh kaget!", "YNKTS"},
+                0)
             };
 
             Quiz myQuiz = new Quiz(question);
-            myQuiz.DisplayQuestion(question[0]);
+            myQuiz.StartQuiz();
 
 
         }

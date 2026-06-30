@@ -14,7 +14,28 @@ namespace QuizTestApp
             this.question = questions;
         }
 
-        public void DisplayQuestion(Question question)
+        public void StartQuiz()
+        {
+            Console.WriteLine("Welcome to the quiz!!");
+            int questionNumber = 1;
+
+            foreach (Question pertanyaan in question)
+            {
+                Console.WriteLine($"Question {questionNumber++}");
+                DisplayQuestion(pertanyaan);
+                int userChoice = GetUserChoice();
+                if (pertanyaan.IsCorrectAnswer(userChoice))
+                {
+                    Console.WriteLine("Correct");
+                }
+                else
+                {
+                    Console.WriteLine($"Salah, yang bener adalah {pertanyaan.Answers[pertanyaan.CorrectionAnswer]}");
+                }
+            }
+        }
+
+        private void DisplayQuestion(Question question)
         {
             Console.WriteLine(question.QuestionText);
 
@@ -22,15 +43,6 @@ namespace QuizTestApp
             {
                 Console.Write($"{i+1}");
                 Console.WriteLine($". {question.Answers[i]}");
-            }
-
-            if (GetUserChoice() == question.CorrectionAnswer)
-            {
-                Console.WriteLine("You Are Correct");
-            }
-            else
-            {
-                Console.WriteLine("You Are Wrong!");
             }
         }
 
@@ -44,6 +56,7 @@ namespace QuizTestApp
                 Console.WriteLine("Invalid Choice. Please Enter the number between 1 & 4: ");
                 input = Console.ReadLine();
             }
+            Console.WriteLine("\n");
             return choice -1;
         }
     }
