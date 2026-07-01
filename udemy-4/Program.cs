@@ -13,8 +13,11 @@
             }
 
             Console.WriteLine(" ");
-            Console.WriteLine("semua nomor lebih tinggi dari 25");
-            List<int> nomorLebihDariSepuluh = nomor.FindAll(x => x >= 25);
+            Console.WriteLine("semua nomor lebih tinggi dari 10");
+
+            Predicate<int> isGreaterThanTen = x => x >= 10;
+
+            List<int> nomorLebihDariSepuluh = nomor.FindAll(isGreaterThanTen);
             foreach (int item in nomorLebihDariSepuluh)
             {
                 Console.Write($"{item}, ");
@@ -26,6 +29,16 @@
             foreach (int item in nomor)
             {
                 Console.Write($"{item}, ");
+            }
+
+            bool hasLargeNumbers = nomor.Any(x => x >= 10);
+            if (hasLargeNumbers)
+            {
+                Console.WriteLine("List Nomor ini ada nomor besar");
+            }
+            else
+            {
+                Console.WriteLine("List Nomor ini tidak ada nomor besar");
             }
         }
     }
