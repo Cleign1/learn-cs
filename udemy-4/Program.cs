@@ -4,21 +4,19 @@
     {
         static void Main(string[] args)
         {
-            List<String> nomor = new List<String>();
+            List<int> nomor = new List<int>() { 10, 15, 5, 19, 3, 11,1};
 
-            nomor.Add("1");
-            nomor.Add("2");
-            nomor.Add("3");
-            Console.WriteLine("Nomor di dalam list ada:");
-            foreach (var item in nomor)
+            Console.WriteLine("Unsorted List");
+            foreach (int item in nomor)
             {
-                Console.WriteLine(item);
+                Console.Write($"{item}, ");
             }
-            nomor.Remove("1");
-            Console.WriteLine("Nomor di dalam list ada:");
-            foreach (var item in nomor)
+
+            nomor.Sort();
+            Console.WriteLine("Sorted List");
+            foreach (int item in nomor)
             {
-                Console.WriteLine(item);
+                Console.Write($"{item}, ");
             }
         }
     }
