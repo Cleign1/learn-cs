@@ -4,41 +4,19 @@
     {
         static void Main(string[] args)
         {
-            List<int> nomor = new List<int>() { 10, 15, 5, 19, 3, 11,1, 99, 25, 9, 2, 3, 6};
-
-            Console.WriteLine("Unsorted List");
-            foreach (int item in nomor)
+            List<Product> products = new List<Product>()
             {
-                Console.Write($"{item}, ");
-            }
+                new Product { Name="Pisang", Price = 10},
+                new Product { Name="Blueberry", Price = 8},
+                new Product { Name="Mangga", Price = 12},
+            };
 
-            Console.WriteLine(" ");
-            Console.WriteLine("semua nomor lebih tinggi dari 10");
+            products.Add(new Product { Name = "Apel", Price = 5 });
 
-            Predicate<int> isGreaterThanTen = x => x >= 10;
-
-            List<int> nomorLebihDariSepuluh = nomor.FindAll(isGreaterThanTen);
-            foreach (int item in nomorLebihDariSepuluh)
+            Console.WriteLine("Produk yang tersedia: ");
+            foreach (Product item in products)
             {
-                Console.Write($"{item}, ");
-            }
-
-            Console.WriteLine(" ");
-            nomor.Sort();
-            Console.WriteLine("Sorted List");
-            foreach (int item in nomor)
-            {
-                Console.Write($"{item}, ");
-            }
-
-            bool hasLargeNumbers = nomor.Any(x => x >= 10);
-            if (hasLargeNumbers)
-            {
-                Console.WriteLine("List Nomor ini ada nomor besar");
-            }
-            else
-            {
-                Console.WriteLine("List Nomor ini tidak ada nomor besar");
+                Console.WriteLine($"Product Name: {item.Name}, Harganya: Rp{item.Price}K");
             }
         }
     }
