@@ -18,6 +18,13 @@
             {
                 Console.WriteLine($"Product Name: {item.Name}, Harganya: Rp{item.Price}K");
             }
+
+            List<Product> produkMurah = products.Where(p => p.Price < 10).ToList();
+            Console.WriteLine("\nProduk Murah");
+            foreach (Product item in produkMurah)
+            {
+                Console.WriteLine($"Product Name: {item.Name}, Harganya: Rp{item.Price}K");
+            }
         }
     }
 }
