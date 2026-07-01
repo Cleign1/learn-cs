@@ -5,15 +5,17 @@
         static void Main(string[] args)
         {
             // key - value, key gk boleh sama
-            Dictionary<int, string> employees = new Dictionary<int, string>();
+            Dictionary<int, Employee> employees = new Dictionary<int, Employee>();
 
-            employees.Add(101, "Jane Doe");
-            employees.Add(102, "Bob Smith");
+            employees.Add(1, new Employee("John Doe", 35, 80000));
+            employees.Add(2, new Employee("John Smith", 33, 77000));
+            employees.Add(3, new Employee("Jane Doe", 28, 78000));
+            employees.Add(4, new Employee("Jane Smith", 25, 88000));
+            employees.Add(5, new Employee("Kevin Doe", 23, 250000));
 
-            Console.WriteLine("Employees:\n");
-            foreach (KeyValuePair<int, string>  item in employees)
+            foreach (var item in employees)
             {
-                Console.WriteLine($"Employee ID: {item.Key}, Name: {item.Value}");
+                Console.WriteLine($"Employee ID: {item.Key}, Name: {item.Value.Name}, Age: {item.Value.Age}, Salary : ${item.Value.Salary}");
             }
         }
     }
