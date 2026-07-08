@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11911.148 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "udemy-1", "udemy-1\udemy-1.csproj", "{B16921C1-D0B7-4D19-81D7-41BF3F5D9516}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udemy-6", "udemy-6\udemy-6.csproj", "{421019F8-F707-4AA6-81DF-2694758CD2EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandlingExercise", "ErrorHandlingExercise\ErrorHandlingExercise.csproj", "{C721CADE-E2F4-44EC-9E30-8A87AA9DABFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udemy-7", "udemy-7\udemy-7.csproj", "{F2BCCE88-4275-4FD6-8734-FC8772B85E30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,18 @@ Global
 		{C721CADE-E2F4-44EC-9E30-8A87AA9DABFA}.Release|x64.Build.0 = Release|Any CPU
 		{C721CADE-E2F4-44EC-9E30-8A87AA9DABFA}.Release|x86.ActiveCfg = Release|Any CPU
 		{C721CADE-E2F4-44EC-9E30-8A87AA9DABFA}.Release|x86.Build.0 = Release|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Debug|x64.Build.0 = Debug|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Debug|x86.Build.0 = Debug|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Release|x64.ActiveCfg = Release|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Release|x64.Build.0 = Release|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2BCCE88-4275-4FD6-8734-FC8772B85E30}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
