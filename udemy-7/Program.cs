@@ -14,7 +14,7 @@
             Console.WriteLine("I also have a cat");
             Cat cat = new Cat();
             cat.Eat();
-            cat.Meow();
+            cat.MakeSound();
         }
     }
 
@@ -23,6 +23,11 @@
         public void Eat()
         {
             Console.WriteLine("Eeating...");
+        }
+
+        public virtual void MakeSound()
+        {
+            Console.WriteLine("This animal is making sound...");
         }
     }
 
@@ -43,7 +48,7 @@
 
     class Cat : Animal
     {
-        public void Meow()
+        public override void MakeSound()
         {
             Console.WriteLine("This cat is meowing!...");
         }
