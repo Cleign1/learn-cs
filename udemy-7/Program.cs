@@ -7,7 +7,7 @@
             Console.WriteLine("Hello, my dog is a German Shepherd");
 
             GermanSheperd dog = new GermanSheperd();
-            dog.Bark();
+            dog.MakeSound();
             dog.Sniff();
             dog.Eat();
 
@@ -33,9 +33,9 @@
 
     class Dog : Animal
     {
-        public void Bark()
+        public override void MakeSound()
         {
-            Console.WriteLine("Barking....");
+            Console.WriteLine("This dog is barking!...");
         }
     }
     class GermanSheperd : Dog
