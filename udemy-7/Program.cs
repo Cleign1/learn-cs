@@ -35,7 +35,7 @@
     {
         public override void MakeSound()
         {
-            Console.WriteLine("This dog is barking!...");
+            base.MakeSound();
         }
     }
     class GermanSheperd : Dog
