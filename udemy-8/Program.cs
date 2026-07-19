@@ -4,8 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Employee alice = new Employee("Alice", 25);
-        alice.DisplayPersonInfo();
+        Employee alice = new Employee("Alice", 25, "Sales Rep", "003001");
+        alice.DisplayEmployeeInfo();
     }
 }
 
@@ -29,8 +29,18 @@ public class Person
 
 public class Employee : Person
 {
-    public Employee(string name, int age) : base(age, name)
+    public string JobTitle { get; private set; }
+    public string EmployeeID { get; private set; }
+    public Employee(string name, int age, string jobTitle, string employeeID) : base(age, name)
     {
+        JobTitle = jobTitle;
+        EmployeeID = employeeID;
         Console.WriteLine("Employee Constructor Called");
+    }
+
+    public void DisplayEmployeeInfo()
+    {
+        DisplayPersonInfo();
+        Console.WriteLine($"Job title: {JobTitle}, Employee ID: {EmployeeID}");
     }
 }
