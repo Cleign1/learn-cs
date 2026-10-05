@@ -4,8 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Employee alice = new Employee("Alice", 25, "Sales Rep", "003001");
-        alice.DisplayEmployeeInfo();
+        //Employee alice = new Employee("Alice", 25, "Sales Rep", "003001");
+        //alice.DisplayEmployeeInfo();
+
+        Manager carl = new Manager("Carl", 45, "Regional Manager", "005001", 10);
+        carl.DisplayManagerInfo();
     }
 }
 
@@ -18,7 +21,7 @@ public class Person
     {
         Age = age;
         Name = name;
-        Console.WriteLine("Person Constructor Called");
+        //Console.WriteLine("Person Constructor Called");
     }
     
     public void DisplayPersonInfo()
@@ -35,12 +38,28 @@ public class Employee : Person
     {
         JobTitle = jobTitle;
         EmployeeID = employeeID;
-        Console.WriteLine("Employee Constructor Called");
+        //Console.WriteLine("Employee Constructor Called");
     }
 
     public void DisplayEmployeeInfo()
     {
         DisplayPersonInfo();
         Console.WriteLine($"Job title: {JobTitle}, Employee ID: {EmployeeID}");
+    }
+}
+
+public class Manager : Employee
+{
+    public int TeamSize { get; private set; }
+    public Manager(string name, int age, string jobTitle, string employeeID, int teamSize) : base(name, age, jobTitle, employeeID)
+    {
+        TeamSize = teamSize;
+        
+    }
+
+    public void DisplayManagerInfo()
+    {
+        DisplayEmployeeInfo();
+        Console.WriteLine($"Team Size: {TeamSize}");
     }
 }
