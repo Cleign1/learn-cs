@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udemy-8", "udemy-8\udemy-8.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udemy-9", "udemy-9\udemy-9.csproj", "{C362AB43-AE76-4635-8C36-08B4E01835F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udemy-10", "udemy-10\udemy-10.csproj", "{762C6211-0632-427C-B2EF-70BA05B5F756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,18 @@ Global
 		{C362AB43-AE76-4635-8C36-08B4E01835F0}.Release|x64.Build.0 = Release|Any CPU
 		{C362AB43-AE76-4635-8C36-08B4E01835F0}.Release|x86.ActiveCfg = Release|Any CPU
 		{C362AB43-AE76-4635-8C36-08B4E01835F0}.Release|x86.Build.0 = Release|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Debug|x64.Build.0 = Debug|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Debug|x86.Build.0 = Debug|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Release|x64.ActiveCfg = Release|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Release|x64.Build.0 = Release|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Release|x86.ActiveCfg = Release|Any CPU
+		{762C6211-0632-427C-B2EF-70BA05B5F756}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
